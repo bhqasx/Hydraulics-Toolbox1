@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div>
+	粒径<br>
+	<input type="number" id="Diameter">
+	<button onclick="StartCalculate ()">开始</button>
+    </div>
+	沉速<br>
+	<p id="result"></p>
+</body>
+
+<script>
+function StartCalculate () {
+	var D = document.getElementById("Diameter").value;
+	document.getElementById("result").innerHTML = D;
+}
+</script>
+<html/>
+
