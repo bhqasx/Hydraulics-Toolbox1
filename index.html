@@ -4,16 +4,29 @@
 	<div>
 	粒径<br>
 	<input type="number" id="Diameter">
+	<br>
+	沙粒密度<br>
+	<input id="rouSedi" value=2650>
+	<br>
+	温度<br>
+	<input id="temperature">
+	<br>
 	<button onclick="StartCalculate ()">开始</button>
     </div>
 	沉速<br>
 	<p id="result"></p>
+	<HR align=left width=300 color=#987cb9 SIZE=1>
+	<input type="file">
 </body>
 
 <script>
 function StartCalculate () {
 	var D = document.getElementById("Diameter").value;
-	document.getElementById("result").innerHTML = D;
+	var rouS = document.getElementById("rouSedi").value;
+	var T = document.getElementById("temperature").value;
+	var visc;
+	visc=1.775*10^(-1);
+	document.getElementById("result").innerHTML = visc;
 }
 </script>
 <html/>
