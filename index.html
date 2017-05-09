@@ -2,19 +2,21 @@
 <html>
 <body>
 	<div>
-	ç²’å¾„<br>
+	Á£¾¶<br>
 	<input type="number" id="Diameter">
 	<br>
-	æ²™ç²’å¯†åº¦<br>
+	É³Á£ÃÜ¶È<br>
 	<input id="rouSedi" value=2650>
 	<br>
-	æ¸©åº¦<br>
+	ÎÂ¶È<br>
 	<input id="temperature">
 	<br>
-	<button onclick="StartCalculate ()">å¼€å§‹</button>
+	<button onclick="StartCalculate ()">¿ªÊ¼</button>
     </div>
-	æ²‰é€Ÿ<br>
+	³ÁËÙ<br>
 	<p id="result"></p>
+	<HR align=left width=300 color=#987cb9 SIZE=1>
+	<input type="file">
 </body>
 
 <script>
@@ -22,11 +24,9 @@ function StartCalculate () {
 	var D = document.getElementById("Diameter").value;
 	var rouS = document.getElementById("rouSedi").value;
 	var T = document.getElementById("temperature").value;
-
 	var visc;
 	visc=1.775*10^(-1);
 	document.getElementById("result").innerHTML = visc;
 }
 </script>
 <html/>
-
